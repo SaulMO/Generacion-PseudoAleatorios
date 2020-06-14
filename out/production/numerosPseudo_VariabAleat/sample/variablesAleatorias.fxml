@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.text.Text?>
+<GridPane alignment="CENTER" hgap="30" xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="sample.ControllerVariablesAleatorias">
+
+    <Label text="Distribución Uniforme" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+    <HBox spacing="5" GridPane.columnIndex="0" GridPane.rowIndex="2" GridPane.halignment="CENTER">
+        <VBox alignment="CENTER" spacing="5">
+            <TextField fx:id="txtRangoA" promptText="RangoA" />
+            <TextField fx:id="txtRangoB" promptText="RangoB" />
+            <TextField fx:id="txtNVA" promptText="n" />
+            <Button fx:id="btnNumerosA" text="No. Aleatorios" GridPane.halignment="CENTER" />
+        </VBox>
+        <ScrollPane hbarPolicy="NEVER" prefWidth="100">
+            <TextArea fx:id="txtANumerosA" centerShape="true" prefHeight="200" promptText="No's. Aleatorios" />
+        </ScrollPane>
+    </HBox>
+
+    <Label text="Distribución Erlang" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+    <HBox alignment="CENTER_RIGHT" spacing="5" GridPane.columnIndex="2" GridPane.rowIndex="2" GridPane.halignment="RIGHT">
+        <VBox alignment="CENTER" spacing="5">
+            <TextField fx:id="txtLambda" promptText="λ" />
+            <TextField fx:id="txtE" promptText="Eerlang"/>
+            <TextField fx:id="txtNVA2" promptText="n" />
+            <Button fx:id="btnNumerosA2" text="No. Aleatorios" GridPane.halignment="CENTER" />
+        </VBox>
+        <ScrollPane hbarPolicy="NEVER" prefWidth="100">
+            <TextArea fx:id="txtANumerosA2" centerShape="true" prefHeight="200" promptText="No's. Aleatorios" />
+        </ScrollPane>
+    </HBox>
+
+</GridPane>

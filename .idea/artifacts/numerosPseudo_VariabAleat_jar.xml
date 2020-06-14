@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="numerosPseudo_VariabAleat:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/numerosPseudo_VariabAleat_jar</output-path>
+    <root id="archive" name="numerosPseudo_VariabAleat.jar">
+      <element id="module-output" name="numerosPseudo_VariabAleat" />
+    </root>
+  </artifact>
+</component>

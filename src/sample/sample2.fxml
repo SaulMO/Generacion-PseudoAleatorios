@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane alignment="center" hgap="10" stylesheets="@resources/disenoCool.css" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+
+    <Label text="Algoritmo Seno - Coseno" GridPane.columnIndex="0" GridPane.columnSpan="4" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
+    <HBox spacing="10" GridPane.columnIndex="0" GridPane.rowIndex="1">
+        <VBox alignment="CENTER" spacing="10">
+            <TextField fx:id="txtSeedA" promptText="semilla" />
+            <TextField fx:id="txtSeedB" promptText="semilla" />
+            <TextField fx:id="txtN" promptText="n" />
+            <Button fx:id="btnStart" text="Generar ri" GridPane.halignment="CENTER" />
+            <Button fx:id="btnPruebas" text="Hacer Pruebas" />
+        </VBox>
+        <ScrollPane hbarPolicy="NEVER" prefWidth="100">
+            <TextArea fx:id="txtAreaNumbers" centerShape="true" prefHeight="200" promptText="No's PseudoA" />
+        </ScrollPane>
+    </HBox>
+
+    <VBox alignment="TOP_CENTER" spacing="5" GridPane.columnIndex="1" GridPane.rowIndex="1">
+        <HBox spacing="15">
+            <Label fx:id="lblPruebaIndependencia" text="Prueba de Independencia :  " />
+            <Label fx:id="lblPruebaUniformidad" text="Prueba de Uniformidad :" />
+        </HBox>
+    </VBox>
+
+    <Label text="Generación Variables Aleatorias" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+    <fx:include source="variablesAleatorias.fxml" GridPane.halignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="4" GridPane.columnSpan="2"></fx:include>
+    <!--
+    <Label text="Generación Variables Aleatorias" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+    <Label text="Distribución Uniforme" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+    <HBox spacing="5" GridPane.columnIndex="0" GridPane.rowIndex="4">
+        <VBox alignment="CENTER" spacing="5">
+            <TextField fx:id="txtRangoA" promptText="RangoA" />
+            <TextField fx:id="txtRangoB" promptText="RangoB" />
+            <TextField fx:id="txtNVA" promptText="n" />
+            <Button fx:id="btnNumerosA" text="No. Aleatorios" GridPane.halignment="CENTER" />
+        </VBox>
+        <ScrollPane hbarPolicy="NEVER" prefWidth="100">
+            <TextArea fx:id="txtANumerosA" centerShape="true" prefHeight="200" promptText="No's. Aleatorios" />
+        </ScrollPane>
+    </HBox>
+
+    <Label text="Distribución Erlang" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+    <HBox alignment="CENTER_RIGHT" spacing="5" GridPane.columnIndex="1" GridPane.rowIndex="4">
+        <VBox alignment="CENTER" spacing="5">
+            <TextField fx:id="txtLambda" promptText="λ" />
+            <TextField fx:id="txtNVA2" promptText="n" />
+            <Button fx:id="btnNumerosA2" text="No. Aleatorios" GridPane.halignment="CENTER" />
+        </VBox>
+        <ScrollPane hbarPolicy="NEVER" prefWidth="100">
+            <TextArea fx:id="txtANumerosA2" centerShape="true" prefHeight="200" promptText="No's. Aleatorios" />
+        </ScrollPane>
+    </HBox>-->
+</GridPane>
